@@ -16,7 +16,25 @@
       </div>
        
     </div>
-    <div class="card-content">
+    <div class="card-content"><br>
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-sm" (click)="setFilterOptions('Male')">Filter Male</button> ||
+          <button class="btn btn-primary btn-sm" (click)="setFilterOptions('Female')">Filter Female</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-sm" (click)="setSortOptions('name','asc')">Sort by name| asc</button> ||
+          <button class="btn btn-primary btn-sm" (click)="setSortOptions('name','desc')">Sort by name| desc</button> 
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-sm" (click)="setSortOptions('age','asc')">Sort by age| asc</button> ||
+          <button class="btn btn-primary btn-sm" (click)="setSortOptions('age','desc')">Sort by age| desc</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-sm" (click)="setSortOptions('gender','asc')">Sort by gender| asc</button> ||
+          <button class="btn btn-primary btn-sm" (click)="setSortOptions('gender','desc')">Sort by gender| desc</button>
+        </div>
+      </div><br>
 <table class="table">
     <thead class="thead-dark">
       <tr>

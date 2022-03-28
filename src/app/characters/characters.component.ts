@@ -8,9 +8,9 @@ import { CharactersService } from '../services/characters.service';
 })
 export class CharactersComponent implements OnInit {
   options: any = {
-    'sort_by':'name',
-    'sort_by_order':'desc',
-    'gender_filter':'Male'
+    'sort_by':'',
+    'sort_by_order':'',
+    'gender_filter':''
   };
   error: boolean = false;
   characterData: any;
@@ -31,4 +31,18 @@ export class CharactersComponent implements OnInit {
       }
     });
   }
+
+  setFilterOptions(gender: string){
+    this.options.gender_filter = gender;
+    this.getCharacters();
+  }
+
+  setSortOptions(sort_by: string, sort_by_order: string){
+    console.log(sort_by);
+    console.log(sort_by_order);
+    this.options.sort_by = sort_by;
+    this.options.sort_by = sort_by_order;
+    this.getCharacters();
+  }
+
 }

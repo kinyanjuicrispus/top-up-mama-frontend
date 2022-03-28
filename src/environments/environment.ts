@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   title: 'TopUp Mama Frontend',
-  apiUrl: 'http://45.56.116.153/public/index.php/'
+  apiUrl: 'http://45.56.116.153/'
 };
 
 /*
