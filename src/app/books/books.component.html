@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-header"><h4>Books</h4> </div>
+    <div class="card-content">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">NAME</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">AUTHORS</th>
+                <th scope="col">COMMENT COUNT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let book of books;let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{book.name}}</td>
+                <td>{{book.isbn}}</td>
+                <td><span *ngFor="let author of book.authors">{{author}}</span></td>
+                <td>{{book.commentCount}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

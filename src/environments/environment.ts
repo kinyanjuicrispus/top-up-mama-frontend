@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  title: 'TopUp Mama Frontend',
+  apiUrl: 'http://45.56.116.153/public/index.php/'
 };
 
 /*
